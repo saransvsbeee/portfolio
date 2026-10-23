@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Saran S., Electrical & Electronics Engineering student seeking internships and jobs." />
+  <title>Saran S. | EEE Student Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rubik:wght@400;500;600;700&family=Nunito:wght@300;400;600;800&family=Ranade:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,500&family=Quintessential&family=Shrikhand&family=Abril+Fatface&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="thunder-bg" aria-hidden="true"></canvas>
+  <canvas id="shard-bg" aria-hidden="true"></canvas>
+  <div class="mesh-gradient" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">Saran<span>.S</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">&#9776;</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#internships">Internships</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="mono">Hello, I'm</p>
+        <h1 class="hero-name">
+          <span class="word">Saran</span>
+          <span class="word accent">S</span>
+        </h1>
+        <h2>Electrical &amp; Electronics Engineering<br>Student</h2>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <!-- Simple circuit illustration -->
+        <svg viewBox="0 0 300 300" class="circuit">
+          <circle cx="150" cy="150" r="60" class="ring" />
+          <text x="150" y="160" text-anchor="middle" class="chip-text">EEE</text>
+          <path d="M150 90V30H60M150 210v60h90M90 150H20M210 150h70V60" class="trace" />
+          <circle cx="60" cy="30" r="6" class="node" /><circle cx="240" cy="270" r="6" class="node" />
+          <circle cx="20" cy="150" r="6" class="node" /><circle cx="280" cy="60" r="6" class="node" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="reveal">
+      <h2 class="title">About Me</h2>
+      <div class="about-grid">
+        <p>
+          I am an Electrical and Electronics Engineering student at
+          <strong>V.S.B. Engineering College, Karur</strong>. I have knowledge of
+          Power Systems, Embedded Systems, Python, C++, and Java. I have completed
+          internships and gained hands-on experience in electrical wiring. I am
+          passionate about learning new technologies and improving my technical skills.
+        </p>
+        <div class="card facts">
+          <p><span>Degree</span> B.E. Electrical and Electronics Engineering</p>
+          <p><span>College</span> V.S.B. Engineering College, Karur</p>
+          <p><span>CGPA</span> 7.52</p>
+          <p><span>Interests</span> Embedded Systems, Power Systems, Power Electronics, Electrical Testing</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="reveal">
+      <h2 class="title">Technical Skills</h2>
+      <div class="skills-bars">
+        <div class="skill-group">
+          <h3>Software</h3>
+          <div class="bar">
+            <div class="bar-head"><span class="bar-label">Java</span></div>
+            <div class="bar-track"><span style="--p:75%"></span></div>
+          </div>
+          <div class="bar">
+            <div class="bar-head"><span class="bar-label">Python</span></div>
+            <div class="bar-track"><span style="--p:50%"></span></div>
+          </div>
+          <div class="bar">
+            <div class="bar-head"><span class="bar-label">C++</span></div>
+            <div class="bar-track"><span style="--p:65%"></span></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Core</h3>
+          <div class="bar">
+            <div class="bar-head"><span class="bar-label">Power Systems</span></div>
+            <div class="bar-track"><span style="--p:70%"></span></div>
+          </div>
+          <div class="bar">
+            <div class="bar-head"><span class="bar-label">Power Electronics</span></div>
+            <div class="bar-track"><span style="--p:70%"></span></div>
+          </div>
+          <div class="bar">
+            <div class="bar-head"><span class="bar-label">Embedded Systems</span></div>
+            <div class="bar-track"><span style="--p:75%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="reveal">
+      <h2 class="title">Projects</h2>
+      <div class="project-grid">
+
+        <article class="card project">
+          <h3>AI-Based Adaptable Traffic Signal System</h3>
+          <p class="meta">Overview</p>
+          <p>An AI-powered traffic management system that dynamically adjusts traffic signal timings based on real-time traffic density.</p>
+          <p class="meta">Problem Statement</p>
+          <p>Fixed-timer traffic signals cause unnecessary congestion, longer waiting times, and inefficient traffic flow.</p>
+          <p class="meta">Technologies Used</p>
+          <div class="tags"><span>Python</span><span>AI / ML</span><span>Computer Vision</span></div>
+          <p class="meta">Key Features</p>
+          <ul>
+            <li>Adaptive signal timing based on traffic density.</li>
+            <li>Real-time traffic detection and flow analysis.</li>
+            <li>Reduced traffic congestion and waiting time.</li>
+          </ul>
+          <a href="https://github.com/saransvsbeee/AI-Based-Adaptable-Traffic-Light-System" target="_blank" rel="noopener" class="link">View on GitHub &rarr;</a>
+        </article>
+
+        <article class="card project">
+          <h3>AI-Based Fault Detection in Underground Cables</h3>
+          <p class="meta">Overview</p>
+          <p>An AI-based system designed to detect and locate faults in underground power cables, related to my IEEE research paper.</p>
+          <p class="meta">Problem Statement</p>
+          <p>Underground cable faults are difficult to identify and locate, resulting in delayed fault clearance and power restoration.</p>
+          <p class="meta">Technologies Used</p>
+          <div class="tags"><span>Python</span><span>Machine Learning</span><span>CNN</span><span>LSTM</span></div>
+          <p class="meta">Key Features</p>
+          <ul>
+            <li>Detection and classification of underground cable faults.</li>
+            <li>Estimation of fault locations.</li>
+            <li>CNN–LSTM-based fault classification.</li>
+          </ul>
+        </article>
+
+        <article class="card project">
+          <h3>Plant Disease Prediction System</h3>
+          <p class="meta">Overview</p>
+          <p>A machine learning system that identifies plant diseases from leaf images.</p>
+          <p class="meta">Problem Statement</p>
+          <p>Late identification of plant diseases can cause crop damage and reduce agricultural productivity.</p>
+          <p class="meta">Technologies Used</p>
+          <div class="tags"><span>Python</span><span>Machine Learning</span><span>TensorFlow</span><span>CNN</span><span>OpenCV</span></div>
+          <p class="meta">Key Features</p>
+          <ul>
+            <li>Predicts plant diseases from leaf images.</li>
+            <li>Supports multi-class disease classification.</li>
+            <li>Helps identify diseases at an early stage.</li>
+          </ul>
+        </article>
+
+        <article class="card project">
+          <h3>Placement Prediction System</h3>
+          <p class="meta">Overview</p>
+          <p>A machine learning system that predicts student placement outcomes using academic performance and skill-related data.</p>
+          <p class="meta">Problem Statement</p>
+          <p>Students may find it difficult to understand how their academic performance and skills affect their placement opportunities.</p>
+          <p class="meta">Technologies Used</p>
+          <div class="tags"><span>Python</span><span>Machine Learning</span><span>Pandas</span><span>NumPy</span><span>Scikit-learn</span></div>
+          <p class="meta">Key Features</p>
+          <ul>
+            <li>Predicts placement outcomes from academic and skill data.</li>
+            <li>Identifies important factors associated with placement success.</li>
+            <li>Helps students identify areas for skill improvement.</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- INTERNSHIPS -->
+    <section id="internships" class="reveal">
+      <h2 class="title">Internships</h2>
+      <div class="timeline">
+        <div class="card">
+          <h3>IoT Internship</h3>
+          <p class="meta">e-Soft IT Solutions, Trichy</p>
+          <div class="tags"><span>IoT</span><span>Sensors</span></div>
+          <ul><li>Worked on IoT-based sensor integration and embedded communication</li><li>Gained hands-on experience with sensor networks and data acquisition</li></ul>
+        </div>
+        <div class="card">
+          <h3>AI &amp; Machine Learning Internship</h3>
+          <p class="meta">Nandha Infotech, Coimbatore</p>
+          <div class="tags"><span>Python</span><span>Machine Learning</span></div>
+          <ul><li>Built and trained ML models for real-world classification tasks</li><li>Worked on data preprocessing, feature engineering and model evaluation</li></ul>
+        </div>
+        <div class="card">
+          <h3>AI &amp; Machine Learning Internship</h3>
+          <p class="meta">Profenaa Technologies, Coimbatore</p>
+          <div class="tags"><span>Python</span><span>Machine Learning</span><span>Deep Learning</span></div>
+          <ul><li>Developed AI-assisted solutions using Python and deep learning frameworks</li><li>Explored neural network architectures and model deployment</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="reveal">
+      <h2 class="title">Achievements</h2>
+      <div class="ach-grid">
+        <div class="card">
+          <h3>IEEE Research Paper</h3>
+          <p><strong>Incipient Location and Fault Detection in Underground Cable Through Traveling Waves and Integrated AI Systems Using Enhanced CNN and LSTM Model</strong></p>
+          <a class="link" href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Incipient%20Location%20and%20Fault%20Detection%20in%20Underground%20Cable%20Through%20Traveling%20Waves%20and%20Integrated%20AI%20Systems%20Using%20Enhanced%20CNN%20and%20LSTM%20Model" target="_blank" rel="noopener">View on IEEE Xplore &rarr;</a>
+        </div>
+        <div class="card">
+          <h3>Introduction to IoT and Digital Transformation</h3>
+          <p>Completed certification course covering IoT fundamentals, sensor networks, and digital transformation strategies.</p>
+          <a class="link" href="https://drive.google.com/file/d/1pDSIxArcuTHgLjEPXXk9iD3tL3lajSM2/view?usp=drive_link" target="_blank" rel="noopener">View Certificate &rarr;</a>
+        </div>
+        <div class="card">
+          <h3>Python Essentials 1</h3>
+          <p>Completed foundational Python programming certification — covering syntax, data structures, functions, and problem-solving.</p>
+          <a class="link" href="https://drive.google.com/file/d/1XKpkSyXAwDo3KVGh8lmULkujfAdJIEHh/view?usp=drive_link" target="_blank" rel="noopener">View Certificate &rarr;</a>
+        </div>
+        <div class="card">
+          <h3>Introduction to Modern AI</h3>
+          <p>Completed certification introducing modern AI concepts — machine learning, deep learning, and real-world AI applications.</p>
+          <a class="link" href="https://drive.google.com/file/d/1sQzE0cVkrHWeYXtg_pza5DA9AYuCJsXu/view?usp=drive_link" target="_blank" rel="noopener">View Certificate &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="reveal center">
+      <h2 class="title">Resume</h2>
+      <p>View or download my resume. Choose the version that fits the role.</p>
+      <div class="btn-row">
+        <a href="https://drive.google.com/drive/folders/1l1wS4GyRgQW9XLMnAiOqtzun5ZMM-2y4?usp=drive_link" target="_blank" rel="noopener" class="btn primary">Core Resume</a>
+        <a href="https://drive.google.com/drive/folders/1XF2b3A2moiDkhVPt8RT0jvncCwvZXv_x?usp=sharing" target="_blank" rel="noopener" class="btn outline">Software Resume</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="reveal center">
+      <h2 class="title">Contact Me</h2>
+      <p>I'm open to internships and job opportunities. Let's connect!</p>
+      <div class="btn-row">
+        <a href="https://www.linkedin.com/in/saran-s-6b8377324" target="_blank" rel="noopener" class="btn primary">LinkedIn</a>
+        <a href="https://github.com/saransvsbeee" target="_blank" rel="noopener" class="btn outline">GitHub</a>
+      </div>
+      <div class="contact-boxes">
+        <a class="contact-box" href="mailto:saransvsbeee@gmail.com">
+          <span class="cb-label">Email me</span>
+          <span class="cb-value">saransvsbeee@gmail.com</span>
+        </a>
+        <a class="contact-box" href="tel:+919080671836">
+          <span class="cb-label">Call me</span>
+          <span class="cb-value">+91 90806 71836</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Saran S. &middot; EEE Student</p>
+    <p>
+      <a href="mailto:saransvsbeee@gmail.com">Email</a> &middot;
+      <a href="tel:+919080671836">+91 90806 71836</a> &middot;
+      <a href="https://www.linkedin.com/in/saran-s-6b8377324" target="_blank" rel="noopener">LinkedIn</a> &middot;
+      <a href="https://github.com/saransvsbeee" target="_blank" rel="noopener">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
